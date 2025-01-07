@@ -1,1 +1,63 @@
-/* You can add global styles to this file, and also import other style files */
+@import 'bulma/css/bulma.css';
+
+html, body, body > * {
+  background-color: #fafafa;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.fc { /* the calendar root */
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.fc .fc-toolbar.fc-header-toolbar {
+  /* Hide the header */
+  display: none;
+}
+
+.fc-theme-standard .fc-day {
+  padding: 4px;
+}
+
+.fc .fc-col-header-cell-cushion {
+  color: #424242;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.fc .fc-daygrid-day-number {
+  /* color: #424242; */
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  margin: auto;
+}
+
+.fc .fc-daygrid-day-top {
+  background-color: #448aff;
+  border-radius: 50%;
+  height: 32px;
+  padding: 1px 2px;
+  width: 32px;
+  justify-content: start;
+}
+
+.fc .fc-daygrid-day.fc-day-today {
+  background-color: #fafafa;
+}
+
+.fc-h-event {
+  background-color: rgba(230, 208, 249, 0.7);
+  border-color: transparent;
+  border-radius: 4px;
+  padding: 2px 4px;
+}
+
+.fc-h-event .fc-event-main {
+  color: #8b03ff;
+}
+
