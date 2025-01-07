@@ -8,7 +8,8 @@ html, body, body > * {
   font-family: 'Roboto', sans-serif;
 }
 
-.fc { /* the calendar root */
+/* the calendar root */
+.fc {
   max-width: 1100px;
   margin: 0 auto;
 }
@@ -29,21 +30,26 @@ html, body, body > * {
   text-transform: uppercase;
 }
 
-.fc .fc-daygrid-day-number {
-  /* color: #424242; */
-  color: #fff;
-  font-size: 12px;
-  font-weight: 600;
-  margin: auto;
-}
-
 .fc .fc-daygrid-day-top {
-  background-color: #448aff;
-  border-radius: 50%;
   height: 32px;
   padding: 1px 2px;
   width: 32px;
   justify-content: start;
+}
+
+/* estilos cuando es día de pago */
+/* .fc .fc-daygrid-day-top {
+  background-color: #448aff;
+  border-radius: 50%;
+} */
+
+.fc .fc-daygrid-day-number {
+  color: #424242;
+  /* color de la letra cuando es día de pago */
+  /* color: #fff; */
+  font-size: 12px;
+  font-weight: 600;
+  margin: auto;
 }
 
 .fc .fc-daygrid-day.fc-day-today {
@@ -52,12 +58,17 @@ html, body, body > * {
 
 .fc-h-event {
   background-color: rgba(230, 208, 249, 0.7);
-  border-color: transparent;
+  border: none;
+  border-left: 12px solid #8b03ff;
   border-radius: 4px;
   padding: 2px 4px;
 }
 
 .fc-h-event .fc-event-main {
   color: #8b03ff;
+  i {
+    font-style: normal;
+    margin-left: 4px;
+  }
 }
 
